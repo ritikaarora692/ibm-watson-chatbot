@@ -1,0 +1,49 @@
+[
+    {
+        "name": "THYROID PROFILE",
+        "procedure": "No special preparation",
+        "cost": "Rs.1200"
+    },
+    {
+        "name": "HEMOGRAM",
+        "procedure": "Overnight fasting is preferred",
+        "cost": "Rs.180"
+    },
+    {
+        "name": "ARTHRITIS",
+        "procedure": "Overnight fasting is preferred",
+        "cost": "Rs.2900"
+    },
+    {
+        "name": "DIABETES PANEL",
+        "procedure": "12 hrs fasting is mandatory",
+        "cost": "Rs.350"
+    },{
+        "name": "IRON STUDIES",
+        "procedure": "Overnight fasting required",
+        "cost": "Rs.980"
+    },
+    {
+        "name": "COMPLETE BLOOD COUNT",
+        "procedure": "No special procedure",
+        "cost": "Rs.175"
+    },{
+        "name": "KIDNEY PANEL",
+        "procedure": "Overnight fasting is preferred",
+        "cost": "Rs.800"
+    },
+    {
+        "name": "GLYCOSYLATED HEMOGLOBIN",
+        "procedure": "No special preparation",
+        "cost": "Rs.200"
+    },{
+        "name": "LIVER PANEL",
+        "procedure": "No special preparation",
+        "cost": "Rs.1800"
+    },
+    {
+        "name": "LIPID PROFILE",
+        "procedure": "Minimum 12 hours fasting is mandatory",
+        "cost": "Rs.820"
+    }
+]

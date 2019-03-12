@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="/js/nagp-care-chatbot.js"></script>
+    <script type="text/javascript" src="/js/book-test.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/nagp-care.css" />
+
+   
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-inverse bg-primary ">
+
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                <img src="/assets/nagp-care-logo.PNG" width="130" height="35" class="d-inline-block align-top margin-5" alt="">
+                </a>
+                <ul class="nav navbar-nav">
+                    <li><a class="selected" href="/bookTest">Book Lab Test</a></li>
+                    <li><a href="/findDoctor">Find Doctor</a></li>
+                </ul>
+                <ul class="nav navbar-nav logout-nav">
+                    <li id="welcome"></li>
+                    <li class="logout"><a href="/logout">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="">
+        <div class="text-section"></div>
+        <div class="doc-section">
+            <div class="doc-heading">Book Lab Test</div>
+            <div class="doc-textarea" id="doc-textInfo">
+                NAGP Care Labs provides world class Laboratory test services.
+                <br/><br/>
+                We provide facilities for following tests:
+                <ul>
+                    <li>
+                        Thyroid Profile
+                    </li>
+                    <li>
+                        Hemogram
+                    </li>
+                    <li>
+                        Lipid Profile
+                    </li>
+                    <li>
+                        Liver Panel
+                    </li>
+                    <li>
+                        Glycosylated Hemoglobin
+                    </li>
+                    <li>
+                        Kidney Panel
+                    </li>
+                    <li>
+                        Complete Blood Count
+                    </li>
+                    <li>
+                        Iron Studies
+                    </li>
+                    <li>
+                        Diabetes Panel
+                    </li>
+                    <li>
+                        Arthritis
+                    </li>
+                </ul>
+    
+            </div>
+        </div>
+        <div id="labChatBox" class="chatBox">
+            <div class="chatHeader">Chat with Us</div>
+            <div id="labChatSection" class="chatHistory">
+            </div>
+            <div class="chatInput">
+                <input id="userInput" class="dialoginput" name="userInput" type="text" placeholder="Please type here" onkeypress="return submitText(event)">
+                <button id="sendButton" type="button"></button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

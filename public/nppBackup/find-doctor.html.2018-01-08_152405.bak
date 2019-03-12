@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="/js/nagp-care-chatbot.js"></script>
+    <script type="text/javascript" src="/js/find-doctor.js"></script>
+    <script type="text/javascript" src="/js/map.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/nagp-care.css" />
+
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-inverse bg-primary ">
+
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                <img src="/assets/nagp-care-logo.png" width="130" height="35" class="d-inline-block align-top margin-5" alt="">
+                </a>
+                <ul class="nav navbar-nav">
+                    <li><a href="/bookTest">Book Lab Test</a></li>
+                    <li><a class="selected" href="/findDoctor">Find Doctor</a></li>
+                </ul>
+                <ul class="nav navbar-nav logout-nav">
+                    <li id="welcome"></li>
+                    <li class="logout"><a href="/logout">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="doc-section">
+        <div class="doc-heading">Not well? - Find A Doctor</div>
+        <div class="doc-textarea" id="doc-textInfo">
+            The NAGP Care helps you find the best doctors in the world.
+            <br/><br/>
+            <b> Let us know your symptoms and we will help you find the best doctor as per your Location. </b>
+            <ul>
+                <li>
+                    Cold, Cough, Nose Block, Dengue, Typhoid, Fever, Body Ache, Vomit, Bone Fracture
+                </li>
+                <li>
+                    Diabetes, Appetite loss, Fever, Viral, Loose Motion, Fever, Body Ache, Stomach Problem, Diarrhoea
+                </li>
+                <li>
+                    Heart Attack, High Blood Pressure, Short of Breath
+                </li>
+                <li>
+                    Bleeding Gums, Swollen tooth, Scaling, Depression, Anxiety, Fever, Body Ache, Vomit, Bone Fracture
+                </li>
+                <li>
+                    Eye pain, Redness in Eye, Optician, Spectacles Related Issue, Spider Web, Eye Swelling, Difficulty In Reading
+                </li>
+                <li>
+                    Bipolar Disorder, Depression, Anxiety, Worthlessness, Lack Of Interest, Suicide, Loss Of Interest
+                </li>
+                <li>
+                    Blood In Urine, Pain While Urinating, Urinary Issues
+                </li>
+                <li>
+                    Surgery, Stitches, Fracture, Broken Bone
+                </li>
+                <li>
+                    Paralysis, Muscle Weakness, Loss of Sensation.
+                </li>
+                <li>
+                    Pimples, Skin Damage, Sun Burn, Hair loss, Unwanted Hair Growth
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <div id="map"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBO4jWjHja81qsjHdqkRIVc8Wkf0H8-VTA&libraries=places&callback=initMap"
+        async defer></script>
+
+    <div class="text-section">
+    </div>
+    <div id="labChatBox" class="chatBox doctor">
+        <div class="chatHeader">Chat with Us</div>
+        <div id="labChatSection" class="chatHistory">
+        </div>
+        <div class="chatInput">
+            <input id="userInput" class="dialoginput" name="userInput" type="text" placeholder="Please type here" onkeypress="return submitInput(event)">
+            <button id="sendButton" type="button"></button>
+        </div>
+    </div>
+
+</body>
+
+</html>

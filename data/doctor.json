@@ -1,0 +1,19 @@
+{
+    "doctors": {
+        "dentist": 2,
+        "dental": 2,
+        "psychiatrist": 1,
+        "pediatrician": 1,
+        "dermatologist": 2,
+        "ophtalmologist": 1,
+        "optician": 1,
+        "general physician": 1,
+        "cardiologist": 3,
+        "pathologist": 1,
+        "neurologist": 1,
+        "gynaecologist": 3,
+        "obstetrician": 3,
+        "surgeon": 3,
+        "urologist": 2
+    }
+}

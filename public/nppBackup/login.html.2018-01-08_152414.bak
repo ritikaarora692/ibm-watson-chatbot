@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="/js/login.js"></script>
+	<link href='/css/font.css' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/login.css" />
+	<link rel="stylesheet" href="/css/nagp-care.css" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+</head>
+
+<body>
+	<header>
+        <nav class="navbar navbar-inverse bg-primary ">
+
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                <img src="/assets/nagp-care-logo.png" width="130" height="35" class="d-inline-block align-top margin-5" alt="">
+                </a>
+                <ul class="nav navbar-nav">
+                    <li><a href="/bookTest">Book Lab Test</a></li>
+                    <li><a href="/findDoctor">Find Doctor</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+	<div class="text-center-login heading" style="float: left; width: 28%; padding-left:120px">
+		<div class="login-header" style="font-size: 48px;">Welcome to NAGP Care</div>
+		<div class="login-header" style="font-size: 15px; padding:  0;">An Initiative by Ritika Arora</div>
+	</div>
+	<div class="text-center-login">
+		<div class="login-header">Login</div>
+		<!-- Main Form -->
+		<div class="login-form-1">
+			<form id="login-form" class="text-left" action="login" method="post">
+				<div class="login-form-main-message"></div>
+				<div class="main-login-form">
+					<div class="login-group">
+						<div class="form-group">
+							<input type="text" class="form-control" id="name" name="name" placeholder="Your Good Name">
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" id="email" name="email" placeholder="Email-ID">
+						</div>
+					</div>
+					<button type="submit" class="login-button"><i class="fa fa-chevron-right"></i></button>
+				</div>
+			</form>
+		</div>
+		<!-- end:Main Form -->
+	</div>
+</body>
+
+</html>
+
+<!-- All the files that are required -->
+
+<!-- Where all the magic happens -->
+<!-- LOGIN FORM -->
